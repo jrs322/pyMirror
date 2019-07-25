@@ -1,4 +1,4 @@
-#Goals
+# Goals
 Create a python version of the Magic Mirror Project to run on raspberry pi
 
 ## Base Apps
