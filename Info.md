@@ -29,3 +29,6 @@ Create a python version of the Magic Mirror Project to run on raspberry pi
  - control and customization thru bluetooth phone app
  
 **Alexa/Google Home integration**
+
+## For questions
+Josh Schlichting - jrs322@case.edu
