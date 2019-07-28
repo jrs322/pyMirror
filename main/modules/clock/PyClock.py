@@ -12,9 +12,13 @@ class PyClock(Widget):
 
     def __init__(self, **kwargs):
         super(PyClock, self).__init__(**kwargs)
-        self.add_widget(self.time_label)
         Clock.schedule_interval(self.update_clock, 1/60)
 
     def update_clock(self, *args):
-        current_time = time.localtime()
-        self.time_label.text = time.strftime("%H:%M:%S")
+        self.time_label.text = time.strftime("%H:%M")
+
+    def configure_clock(self):
+        self.time_label.font_size ='100sp'
+        self.center = [500, 500]
+        self.pos_hint = {'top':0.9, 'x':0.1}
+        self.add_widget(self.time_label)
